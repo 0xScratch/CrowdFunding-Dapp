@@ -5,9 +5,9 @@ import { BrowserRouter as Router } from 'react-router-dom'
 // import dynamic from 'next/dynamic'
 
 // INTERNAL IMPORT
-import { CrowdFundingContext } from '@/Context/CrowdFunding'
-import Logo from "../components/Logo"
-import Menu from "../components/Menu"
+import { CrowdFundingContext } from '@/app/components/Context/CrowdFunding'
+import Logo from "./Logo"
+import Menu from "./Menu"
 import Link from 'next/link'
 
 const NavBar = () => {
@@ -38,7 +38,7 @@ const NavBar = () => {
                                 {menuList.map((element, i) => (
                                     <li key={i + 1}>
                                         <a
-                                            href='/'
+                                            href='#'
                                             aria-label='Our product'
                                             title='Our product'
                                             className='link-hover-effect font-medium tracking-wide text-gray-100 transition-colors duration-200'
@@ -80,7 +80,7 @@ const NavBar = () => {
                                         <div className='flex items-center justify-center mb-4'>
                                             <div>
                                                 <a
-                                                    href='/'
+                                                    href='#'
                                                     aria-label="Company"
                                                     title='Company'
                                                     className='inline-flex items-center'
@@ -115,7 +115,7 @@ const NavBar = () => {
                                                 {menuList.map((el, i) => (
                                                     <li key={i + 1}>
                                                         <Link
-                                                            href="/"
+                                                            href="#"
                                                             aria-label='Our product'
                                                             title='Our product'
                                                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'

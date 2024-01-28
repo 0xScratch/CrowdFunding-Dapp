@@ -18,7 +18,7 @@ export const CrowdFundingProvider = ({children}) => {
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
+        if (typeof window !== 'null') {
             setProvider(new ethers.providers.Web3Provider(window.ethereum))
             checkIfWalletConnected()
         }

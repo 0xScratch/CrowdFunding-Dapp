@@ -3,9 +3,9 @@
 import './globals.css'
 
 // INTERNAL IMPORT
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
-import {CrowdFundingProvider} from '../Context/CrowdFunding'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import {CrowdFundingProvider} from './components/Context/CrowdFunding'
 
 // const inter = Inter({ subsets: ['latin'] })
 
